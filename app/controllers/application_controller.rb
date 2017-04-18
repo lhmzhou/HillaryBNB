@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
     self.class.to_s == "HighVoltage::PagesController"
   end
 
-  def sign_in!(user)
+  def sign_in!(user)           
     @current_user = user
     session[:session_token] = user.session_token
   end
